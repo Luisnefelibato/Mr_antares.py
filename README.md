@@ -24,27 +24,6 @@ Análisis contextual de las conversaciones para ofrecer respuestas más precisas
 Clasificación de intenciones del usuario
 Almacenamiento y recuperación de sesiones de conversación
 
-Arquitectura del Sistema
-La arquitectura propuesta sigue un modelo cliente-servidor:
-Copy+----------------------------------------+      +------------------------------------------+
-|            FRONTEND (React)            |      |              BACKEND (FastAPI)          |
-|                                        |      |                                          |
-|  +----------------+   +-----------+    |      |   +---------------+   +----------------+ |
-|  | Chat Component |-->| API Client |<===HTTP===>| Chat Endpoints |-->| MrAntaresWeb   | |
-|  +----------------+   +-----------+    |      |   +---------------+   +----------------+ |
-|                                        |      |                        |                 |
-|  +----------------+                    |      |                        v                 |
-|  | Chat UI States |                    |      |               +----------------+         |
-|  +----------------+                    |      |               | Context        |         |
-|                                        |      |               | Analyzer       |         |
-|                                        |      |               +----------------+         |
-|                                        |      |                        |                 |
-|                                        |      |                        v                 |
-|                                        |      |               +----------------+         |
-|                                        |      |               | OpenAI / Local |         |
-|                                        |      |               | Responses      |         |
-|                                        |      |               +----------------+         |
-+----------------------------------------+      +------------------------------------------+
 Requisitos Técnicos
 Backend
 
