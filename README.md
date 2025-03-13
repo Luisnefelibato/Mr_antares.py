@@ -76,27 +76,7 @@ ENV=development
 
 # Base de datos (opcional)
 REDIS_URL=redis://localhost:6379/0
-3. Estructura de Directorios del Backend
-Siguiendo la estructura existente del proyecto:
-Copybackend/
-├── src/
-│   ├── api/
-│   │   ├── controllers/
-│   │   │   └── chat_controller.py  # Controlador para el chatbot
-│   │   ├── routes/
-│   │   │   └── chat_routes.py      # Rutas para el chatbot
-│   │   └── middlewares/
-│   ├── core/
-│   │   ├── nlp/
-│   │   │   └── context_analyzer.py # Análisis contextual (del archivo mr_antares_web.py)
-│   │   └── response/
-│   │       └── mr_antares.py       # Lógica principal (del archivo mr_antares_web.py)
-│   ├── config/
-│   │   └── settings.py             # Configuraciones
-│   ├── utils/
-│   │   └── logger.py               # Utilidades de logging
-│   └── main.py                     # Punto de entrada FastAPI
-└── requirements.txt                # Dependencias del backend
+
 4. Implementación del Backend
 
 Copiar el código de mr_antares_web.py en los archivos correspondientes según la estructura de directorios.
